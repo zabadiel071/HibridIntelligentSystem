@@ -1,2 +1,2 @@
-**This s a simple classifier implementing 
+**This is a simple classifier implementing 
   neural networks and genetic algorithms**
