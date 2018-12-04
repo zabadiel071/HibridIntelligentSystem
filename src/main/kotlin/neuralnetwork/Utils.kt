@@ -1,5 +1,6 @@
 package neuralnetwork
 
+import java.util.*
 import kotlin.collections.ArrayList
 
 fun product(inputs: FloatArray?, weights: Array<FloatArray>?): ArrayList<Float>? {
@@ -28,4 +29,8 @@ fun layerStep(inputs:FloatArray,
 
 fun sigmoid(x:Float) : Float{
     return (1 / (1 + Math.exp( -x.toDouble() )) ) .toFloat()
+}
+
+fun genNumber(max:Float, min:Float): Float {
+    return Random().nextFloat() * (max - min) + min;
 }
