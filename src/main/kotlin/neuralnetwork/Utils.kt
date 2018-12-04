@@ -23,7 +23,6 @@ fun layerStep(inputs:FloatArray,
         : List<Float>
 {
     val product:ArrayList<Float> = product(inputs, weights)!!
-
     return product.zip(biases!!.toList()){ a,b -> sigmoid(a - b)}
 }
 
