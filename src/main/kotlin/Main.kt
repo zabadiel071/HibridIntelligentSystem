@@ -14,17 +14,17 @@ fun main(args: Array<String>) {
 
     //Create dummy parents as example for genetic algorithms evolution
     val father = arrayListOf(
-            arrayListOf(1.0,2.0,3.0),
-            arrayListOf(1.0,2.0,3.0),
-            arrayListOf(1.0,2.0,3.0),
-            arrayListOf(10.0,11.0,12.0,13.0)
+            arrayListOf(1.0f,2.0f,3.0f),
+            arrayListOf(1.0f,2.0f,3.0f),
+            arrayListOf(1.0f,2.0f,3.0f),
+            arrayListOf(10.0f,11.0f,12.0f,13.0f)
     )
 
     val mother = arrayListOf(
-            arrayListOf(-1.0,-2.0,-3.0),
-            arrayListOf(-1.0,-2.0,-3.0),
-            arrayListOf(-1.0,-2.0,-3.0),
-            arrayListOf(-10.0,-11.0,-12.0,-13.0)
+            arrayListOf(-1.0f,-2.0f,-3.0f),
+            arrayListOf(-1.0f,-2.0f,-3.0f),
+            arrayListOf(-1.0f,-2.0f,-3.0f),
+            arrayListOf(-10.0f,-11.0f,-12.0f,-13.0f)
     )
 
     val newChild = GeneticAlgorithm.evolution(father,mother)
